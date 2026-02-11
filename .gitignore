@@ -1,0 +1,58 @@
+# ----------------------
+# Betriebssystem-Dateien
+# ----------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------
+# Abhängigkeiten
+# ----------------------
+node_modules/
+vendor/
+
+# ----------------------
+# Build-Ordner
+# ----------------------
+dist/
+build/
+out/
+target/
+
+# ----------------------
+# Umgebungsvariablen
+# ----------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------
+# IDE / Editor
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------
+# Test / Coverage
+# ----------------------
+coverage/
+.nyc_output/
+
+# ----------------------
+# Temporäre Dateien
+# ----------------------
+tmp/
+temp/
+*.tmp
+*.bak
