@@ -1,1 +1,10 @@
-relik
+torch==2.3.1
+relik==1.0.6
+uvicorn
+fastapi
+pydantic
+gradio==5.50.0
+pyvis
+streamlit
+typer==0.12.5
+click==8.1.7
