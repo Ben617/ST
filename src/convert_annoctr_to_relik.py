@@ -1,0 +1,1 @@
+# Haupt-Converter: liest AnnoCTR und schreibt ReLiK-konformes jsonl
