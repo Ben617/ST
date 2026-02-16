@@ -1,82 +1,59 @@
 #!/usr/bin/env python3
-"""
-add_candidates.py
-Windows-safe wrapper to call:
-  relik retriever add-candidates <question_encoder> <document_index> <in> <out> --top-k <K> ...
+from __future__ import annotations
 
-Edit QUESTION_ENCODER and DOCUMENT_INDEX below to match the model/index you want to use.
-"""
-from pathlib import Path
 import subprocess
 import sys
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# --- CONFIGURE THESE ---
-# Quick baseline (replace if you have a MITRE index/encoder)
+# Modelle/Index (Baseline)
 QUESTION_ENCODER = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-encoder"
-DOCUMENT_INDEX = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-wikipedia-index"
+#DOCUMENT_INDEX = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-wikipedia-index"
+DOCUMENT_INDEX = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-wikipedia-faiss-flat-index"
 
-TOP_K = "100"
-BATCH_SIZE = "128"
-NUM_WORKERS = "4"
-DEVICE = "cpu"  # set "cuda" if you have GPU & proper CUDA + torch
-PRECISION = "fp32"  # fp16 requires GPU set-up
+# schneller Start (kannst du später erhöhen)
+TOP_K = "20"
+BATCH_SIZE = "4"
+NUM_WORKERS = "0"
+DEVICE = "cpu"      # "cuda" falls GPU
+PRECISION = "fp16"  # "fp16" meist nur mit GPU sinnvoll
 
-# --- paths ---
-WIN_DIR = ROOT / "data" / "windowed" / "relik"
-OUT_DIR = ROOT / "data" / "candidates" / "relik"
+WIN_DIR = ROOT / "data/windowed/relik"
+OUT_DIR = ROOT / "data/candidates/relik"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-pairs = [
-    (WIN_DIR / "train.window.jsonl", OUT_DIR / "train.window.candidates.jsonl"),
-    (WIN_DIR / "val.window.jsonl",   OUT_DIR / "val.window.candidates.jsonl"),
-    (WIN_DIR / "test.window.jsonl",  OUT_DIR / "test.window.candidates.jsonl"),
+SPLITS = [
+    ("train", WIN_DIR / "train.window.jsonl", OUT_DIR / "train.window.candidates.jsonl"),
+    ("val",   WIN_DIR / "val.window.jsonl",   OUT_DIR / "val.window.candidates.jsonl"),
+    ("test",  WIN_DIR / "test.window.jsonl",  OUT_DIR / "test.window.candidates.jsonl"),
 ]
 
-def find_relik_exe() -> str:
-    py = Path(sys.executable).resolve()
-    candidates = [
-        py.parent / "relik.exe",
-        py.parent / "Scripts" / "relik.exe",
-        py.parent.parent / "Scripts" / "relik.exe",
+def run_add_candidates(inp: Path, out: Path) -> None:
+    out.parent.mkdir(parents=True, exist_ok=True)
+    cmd = [
+        sys.executable, "-m", "relik.cli.cli",
+        "retriever", "add-candidates",
+        QUESTION_ENCODER, DOCUMENT_INDEX,
+        str(inp), str(out),
+        "--top-k", TOP_K,
+        "--batch-size", BATCH_SIZE,
+        "--num-workers", NUM_WORKERS,
+        "--device", DEVICE,
+        "--precision", PRECISION,
     ]
-    for c in candidates:
-        if c.exists():
-            return str(c)
-    # fallback to PATH name
-    return "relik"
-
-def run_cmd(cmd):
-    print("RUN:", " ".join(map(str, cmd)))
+    print("RUN:", " ".join(cmd))
     subprocess.run(cmd, check=True)
 
-def main():
-    relik_exe = find_relik_exe()
-    print("Using relik executable:", relik_exe)
-
-    for inp, out in pairs:
+def main() -> None:
+    for name, inp, out in SPLITS:
         if not inp.exists():
-            print(f"SKIP: input missing: {inp}")
+            print(f"[{name}] missing input: {inp}")
             continue
-        print(f"\n==> add-candidates {inp.name} -> {out.name}")
-        cmd = [
-            relik_exe,
-            "retriever",
-            "add-candidates",
-            QUESTION_ENCODER,
-            DOCUMENT_INDEX,
-            str(inp),
-            str(out),
-            "--top-k", TOP_K,
-            "--batch-size", BATCH_SIZE,
-            "--num-workers", NUM_WORKERS,
-            "--device", DEVICE,
-            "--precision", PRECISION,
-        ]
-        run_cmd(cmd)
+        print(f"\n==> [{name}] {inp} -> {out}")
+        run_add_candidates(inp, out)
 
-    print("\n✅ add-candidates finished. Check files in:", OUT_DIR)
+    print("\n✅ candidates created")
 
 if __name__ == "__main__":
     main()
