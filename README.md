@@ -9,7 +9,7 @@ python src/inspect_annoctr.py
 ## AnnoCTR → ReLiK-Format konvertieren
 
 ```bash
-python src/convert_annoctr_to_relik.py```
+python src/convert_annoctr_to_relik.py
 ```
 
 
@@ -42,3 +42,4 @@ bash src/train_reader.sh
 ```bash
 python src/eval.py
 ```
+
