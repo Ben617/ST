@@ -51,14 +51,19 @@ python src/add_candidates.py
 ## Reader trainieren
 
 ```bash
-python -m relik.cli.cli reader train \
+WANDB_DISABLED=true python -m relik.cli.cli reader train \
   base \
   ++data.train_dataset_path=data/candidates/relik/train.window.candidates.jsonl \
   ++data.val_dataset_path=data/candidates/relik/val.window.candidates.jsonl \
   ++data.test_dataset_path=data/candidates/relik/test.window.candidates.jsonl \
   ++data.train_dataset.section_size=null \
   ++training.trainer.devices=1 \
-  ++training.trainer.accelerator=cpu
+  ++training.trainer.accelerator=cpu \
+  ++training.trainer.precision=bf16-mixed \
+  ++training.trainer.max_steps=20 \
+  ++training.trainer.limit_val_batches=1 \
+  ++training.trainer.val_check_interval=10 \
+  ++training.trainer.log_every_n_steps=1
 
 ```
 3 auswählen

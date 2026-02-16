@@ -60,6 +60,4 @@ temp/
 # ----------------------
 #
 # ----------------------
-data/processed/relik/
-data/windowed/relik/
-data/candidates/relik/
+experiments/
