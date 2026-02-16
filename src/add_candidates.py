@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 from pathlib import Path
 
+# --- HARD LIMITS gegen Freeze/OOM-Spikes (muss vor ML Imports wirken) ---
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 ROOT = Path(__file__).resolve().parents[1]
 
-# Modelle/Index (Baseline)
 QUESTION_ENCODER = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-encoder"
-#DOCUMENT_INDEX = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-wikipedia-index"
-DOCUMENT_INDEX = "sapienzanlp/relik-retriever-e5-base-v2-aida-blink-wikipedia-faiss-flat-index"
+DOCUMENT_INDEX = str(ROOT / "data/index/mitre_index")
 
-# schneller Start (kannst du später erhöhen)
-TOP_K = "20"
-BATCH_SIZE = "4"
+
+# Noch konservativer, weil du SIGKILL gesehen hast:
+TOP_K = "10"
+BATCH_SIZE = "1"
 NUM_WORKERS = "0"
-DEVICE = "cpu"      # "cuda" falls GPU
-PRECISION = "fp16"  # "fp16" meist nur mit GPU sinnvoll
+
+DEVICE = "cpu"
+INDEX_DEVICE = "cpu"     # <<< wichtig: explizit setzen
+PRECISION = "fp16"
 
 WIN_DIR = ROOT / "data/windowed/relik"
 OUT_DIR = ROOT / "data/candidates/relik"
@@ -40,7 +49,9 @@ def run_add_candidates(inp: Path, out: Path) -> None:
         "--batch-size", BATCH_SIZE,
         "--num-workers", NUM_WORKERS,
         "--device", DEVICE,
+        "--index-device", INDEX_DEVICE,  # <<< neu
         "--precision", PRECISION,
+        "--no-log-recall",
     ]
     print("RUN:", " ".join(cmd))
     subprocess.run(cmd, check=True)

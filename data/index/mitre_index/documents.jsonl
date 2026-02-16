@@ -1,0 +1,135 @@
+{"text": "T1486 Data Encrypted for Impact", "id": "T1486", "metadata": {"entity_type": "TECHNIQUE", "title": "Data Encrypted for Impact"}}
+{"text": "T1566 Phishing", "id": "T1566", "metadata": {"entity_type": "TECHNIQUE", "title": "Phishing"}}
+{"text": "T1056 Input Capture", "id": "T1056", "metadata": {"entity_type": "TECHNIQUE", "title": "Input Capture"}}
+{"text": "T1059 Command and Scripting Interpreter", "id": "T1059", "metadata": {"entity_type": "TECHNIQUE", "title": "Command and Scripting Interpreter"}}
+{"text": "T1105 Ingress Tool Transfer", "id": "T1105", "metadata": {"entity_type": "TECHNIQUE", "title": "Ingress Tool Transfer"}}
+{"text": "T1557 Adversary-in-the-Middle", "id": "T1557", "metadata": {"entity_type": "TECHNIQUE", "title": "Adversary-in-the-Middle"}}
+{"text": "T1195 Supply Chain Compromise", "id": "T1195", "metadata": {"entity_type": "TECHNIQUE", "title": "Supply Chain Compromise"}}
+{"text": "T1204 User Execution", "id": "T1204", "metadata": {"entity_type": "TECHNIQUE", "title": "User Execution"}}
+{"text": "T1496 Resource Hijacking", "id": "T1496", "metadata": {"entity_type": "TECHNIQUE", "title": "Resource Hijacking"}}
+{"text": "T1036 Masquerading", "id": "T1036", "metadata": {"entity_type": "TECHNIQUE", "title": "Masquerading"}}
+{"text": "T1082 System Information Discovery", "id": "T1082", "metadata": {"entity_type": "TECHNIQUE", "title": "System Information Discovery"}}
+{"text": "T1055 Process Injection", "id": "T1055", "metadata": {"entity_type": "TECHNIQUE", "title": "Process Injection"}}
+{"text": "T1041 Exfiltration Over C2 Channel", "id": "T1041", "metadata": {"entity_type": "TECHNIQUE", "title": "Exfiltration Over C2 Channel"}}
+{"text": "T1027 Obfuscated Files or Information", "id": "T1027", "metadata": {"entity_type": "TECHNIQUE", "title": "Obfuscated Files or Information"}}
+{"text": "T1132 Data Encoding", "id": "T1132", "metadata": {"entity_type": "TECHNIQUE", "title": "Data Encoding"}}
+{"text": "T1547 Boot or Logon Autostart Execution", "id": "T1547", "metadata": {"entity_type": "TECHNIQUE", "title": "Boot or Logon Autostart Execution"}}
+{"text": "T1573 Encrypted Channel", "id": "T1573", "metadata": {"entity_type": "TECHNIQUE", "title": "Encrypted Channel"}}
+{"text": "T1057 Process Discovery", "id": "T1057", "metadata": {"entity_type": "TECHNIQUE", "title": "Process Discovery"}}
+{"text": "T1606 Forge Web Credentials", "id": "T1606", "metadata": {"entity_type": "TECHNIQUE", "title": "Forge Web Credentials"}}
+{"text": "T1211 Exploitation for Defense Evasion", "id": "T1211", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploitation for Defense Evasion"}}
+{"text": "T1555 Credentials from Password Stores", "id": "T1555", "metadata": {"entity_type": "TECHNIQUE", "title": "Credentials from Password Stores"}}
+{"text": "T1112 Modify Registry", "id": "T1112", "metadata": {"entity_type": "TECHNIQUE", "title": "Modify Registry"}}
+{"text": "T1090 Proxy", "id": "T1090", "metadata": {"entity_type": "TECHNIQUE", "title": "Proxy"}}
+{"text": "T1053 Scheduled Task/Job", "id": "T1053", "metadata": {"entity_type": "TECHNIQUE", "title": "Scheduled Task/Job"}}
+{"text": "T1125 Video Capture", "id": "T1125", "metadata": {"entity_type": "TECHNIQUE", "title": "Video Capture"}}
+{"text": "T1113 Screen Capture", "id": "T1113", "metadata": {"entity_type": "TECHNIQUE", "title": "Screen Capture"}}
+{"text": "T1565 Data Manipulation", "id": "T1565", "metadata": {"entity_type": "TECHNIQUE", "title": "Data Manipulation"}}
+{"text": "T1608 Stage Capabilities", "id": "T1608", "metadata": {"entity_type": "TECHNIQUE", "title": "Stage Capabilities"}}
+{"text": "T1102 Web Service", "id": "T1102", "metadata": {"entity_type": "TECHNIQUE", "title": "Web Service"}}
+{"text": "T1491 Defacement", "id": "T1491", "metadata": {"entity_type": "TECHNIQUE", "title": "Defacement"}}
+{"text": "T1490 Inhibit System Recovery", "id": "T1490", "metadata": {"entity_type": "TECHNIQUE", "title": "Inhibit System Recovery"}}
+{"text": "T1083 File and Directory Discovery", "id": "T1083", "metadata": {"entity_type": "TECHNIQUE", "title": "File and Directory Discovery"}}
+{"text": "T1119 Automated Collection", "id": "T1119", "metadata": {"entity_type": "TECHNIQUE", "title": "Automated Collection"}}
+{"text": "T1614 System Location Discovery", "id": "T1614", "metadata": {"entity_type": "TECHNIQUE", "title": "System Location Discovery"}}
+{"text": "T1033 System Owner/User Discovery", "id": "T1033", "metadata": {"entity_type": "TECHNIQUE", "title": "System Owner/User Discovery"}}
+{"text": "T1005 Data from Local System", "id": "T1005", "metadata": {"entity_type": "TECHNIQUE", "title": "Data from Local System"}}
+{"text": "T1071 Application Layer Protocol", "id": "T1071", "metadata": {"entity_type": "TECHNIQUE", "title": "Application Layer Protocol"}}
+{"text": "T1222 File and Directory Permissions Modification", "id": "T1222", "metadata": {"entity_type": "TECHNIQUE", "title": "File and Directory Permissions Modification"}}
+{"text": "T1562 Impair Defenses", "id": "T1562", "metadata": {"entity_type": "TECHNIQUE", "title": "Impair Defenses"}}
+{"text": "T1567 Exfiltration Over Web Service", "id": "T1567", "metadata": {"entity_type": "TECHNIQUE", "title": "Exfiltration Over Web Service"}}
+{"text": "T1078 Valid Accounts", "id": "T1078", "metadata": {"entity_type": "TECHNIQUE", "title": "Valid Accounts"}}
+{"text": "T1070 File Deletion", "id": "T1070", "metadata": {"entity_type": "TECHNIQUE", "title": "File Deletion"}}
+{"text": "T1489 Service Stop", "id": "T1489", "metadata": {"entity_type": "TECHNIQUE", "title": "Service Stop"}}
+{"text": "T1528 Steal Application Access Token", "id": "T1528", "metadata": {"entity_type": "TECHNIQUE", "title": "Steal Application Access Token"}}
+{"text": "T1620 Reflective Code Loading", "id": "T1620", "metadata": {"entity_type": "TECHNIQUE", "title": "Reflective Code Loading"}}
+{"text": "T1559 Inter-Process Communication", "id": "T1559", "metadata": {"entity_type": "TECHNIQUE", "title": "Inter-Process Communication"}}
+{"text": "T1046 Network Service Scanning", "id": "T1046", "metadata": {"entity_type": "TECHNIQUE", "title": "Network Service Scanning"}}
+{"text": "T1482 Domain Trust Discovery", "id": "T1482", "metadata": {"entity_type": "TECHNIQUE", "title": "Domain Trust Discovery"}}
+{"text": "T1189 Drive-by Compromise", "id": "T1189", "metadata": {"entity_type": "TECHNIQUE", "title": "Drive-by Compromise"}}
+{"text": "T1499 Endpoint Denial of Service", "id": "T1499", "metadata": {"entity_type": "TECHNIQUE", "title": "Endpoint Denial of Service"}}
+{"text": "T1218 Signed Binary Proxy Execution", "id": "T1218", "metadata": {"entity_type": "TECHNIQUE", "title": "Signed Binary Proxy Execution"}}
+{"text": "T1588 Obtain Capabilities", "id": "T1588", "metadata": {"entity_type": "TECHNIQUE", "title": "Obtain Capabilities"}}
+{"text": "T1190 Exploit Public-Facing Application", "id": "T1190", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploit Public-Facing Application"}}
+{"text": "T1553 Subvert Trust Controls", "id": "T1553", "metadata": {"entity_type": "TECHNIQUE", "title": "Subvert Trust Controls"}}
+{"text": "T1014 Rootkit", "id": "T1014", "metadata": {"entity_type": "TECHNIQUE", "title": "Rootkit"}}
+{"text": "T1623 Command and Scripting Interpreter: Unix Shell", "id": "T1623", "metadata": {"entity_type": "TECHNIQUE", "title": "Command and Scripting Interpreter: Unix Shell"}}
+{"text": "T1068 Exploitation for Privilege Escalation", "id": "T1068", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploitation for Privilege Escalation"}}
+{"text": "T1560 Archive Collected Data", "id": "T1560", "metadata": {"entity_type": "TECHNIQUE", "title": "Archive Collected Data"}}
+{"text": "T1048 Exfiltration Over Alternative Protocol", "id": "T1048", "metadata": {"entity_type": "TECHNIQUE", "title": "Exfiltration Over Alternative Protocol"}}
+{"text": "T1110 Brute Force", "id": "T1110", "metadata": {"entity_type": "TECHNIQUE", "title": "Brute Force"}}
+{"text": "T1574 Hijack Execution Flow", "id": "T1574", "metadata": {"entity_type": "TECHNIQUE", "title": "Hijack Execution Flow"}}
+{"text": "T1114 Email Collection", "id": "T1114", "metadata": {"entity_type": "TECHNIQUE", "title": "Email Collection"}}
+{"text": "T1140 Deobfuscate/Decode Files or Information", "id": "T1140", "metadata": {"entity_type": "TECHNIQUE", "title": "Deobfuscate/Decode Files or Information"}}
+{"text": "T1091 Replication Through Removable Media", "id": "T1091", "metadata": {"entity_type": "TECHNIQUE", "title": "Replication Through Removable Media"}}
+{"text": "T1217 Browser Bookmark Discovery", "id": "T1217", "metadata": {"entity_type": "TECHNIQUE", "title": "Browser Bookmark Discovery"}}
+{"text": "T1124 System Time Discovery", "id": "T1124", "metadata": {"entity_type": "TECHNIQUE", "title": "System Time Discovery"}}
+{"text": "T1016 System Network Configuration Discovery", "id": "T1016", "metadata": {"entity_type": "TECHNIQUE", "title": "System Network Configuration Discovery"}}
+{"text": "T1020 Automated Exfiltration", "id": "T1020", "metadata": {"entity_type": "TECHNIQUE", "title": "Automated Exfiltration"}}
+{"text": "T1539 Steal Web Session Cookie", "id": "T1539", "metadata": {"entity_type": "TECHNIQUE", "title": "Steal Web Session Cookie"}}
+{"text": "T1589 Gather Victim Identity Information", "id": "T1589", "metadata": {"entity_type": "TECHNIQUE", "title": "Gather Victim Identity Information"}}
+{"text": "T1631 Process Injection: Ptrace System Calls", "id": "T1631", "metadata": {"entity_type": "TECHNIQUE", "title": "Process Injection: Ptrace System Calls"}}
+{"text": "T1497 Virtualization/Sandbox Evasion", "id": "T1497", "metadata": {"entity_type": "TECHNIQUE", "title": "Virtualization/Sandbox Evasion"}}
+{"text": "T1518 Software Discovery", "id": "T1518", "metadata": {"entity_type": "TECHNIQUE", "title": "Software Discovery"}}
+{"text": "T1556 Modify Authentication Process", "id": "T1556", "metadata": {"entity_type": "TECHNIQUE", "title": "Modify Authentication Process"}}
+{"text": "T1003 OS Credential Dumping", "id": "T1003", "metadata": {"entity_type": "TECHNIQUE", "title": "OS Credential Dumping"}}
+{"text": "T1203 Exploitation for Client Execution", "id": "T1203", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploitation for Client Execution"}}
+{"text": "T1137 Office Application Startup", "id": "T1137", "metadata": {"entity_type": "TECHNIQUE", "title": "Office Application Startup"}}
+{"text": "T1021 Remote Services", "id": "T1021", "metadata": {"entity_type": "TECHNIQUE", "title": "Remote Services"}}
+{"text": "T1595 Active Scanning", "id": "T1595", "metadata": {"entity_type": "TECHNIQUE", "title": "Active Scanning"}}
+{"text": "T1484 Domain Policy Modification", "id": "T1484", "metadata": {"entity_type": "TECHNIQUE", "title": "Domain Policy Modification"}}
+{"text": "T1563 Remote Service Session Hijacking", "id": "T1563", "metadata": {"entity_type": "TECHNIQUE", "title": "Remote Service Session Hijacking"}}
+{"text": "T1115 Clipboard Data", "id": "T1115", "metadata": {"entity_type": "TECHNIQUE", "title": "Clipboard Data"}}
+{"text": "T1037 Boot or Logon Initialization Scripts", "id": "T1037", "metadata": {"entity_type": "TECHNIQUE", "title": "Boot or Logon Initialization Scripts"}}
+{"text": "T1548 Abuse Elevation Control Mechanism", "id": "T1548", "metadata": {"entity_type": "TECHNIQUE", "title": "Abuse Elevation Control Mechanism"}}
+{"text": "T1546 Image File Execution Options Injection", "id": "T1546", "metadata": {"entity_type": "TECHNIQUE", "title": "Image File Execution Options Injection"}}
+{"text": "T1572 Protocol Tunneling", "id": "T1572", "metadata": {"entity_type": "TECHNIQUE", "title": "Protocol Tunneling"}}
+{"text": "T1583 Acquire Infrastructure", "id": "T1583", "metadata": {"entity_type": "TECHNIQUE", "title": "Acquire Infrastructure"}}
+{"text": "T1586 Compromise Accounts", "id": "T1586", "metadata": {"entity_type": "TECHNIQUE", "title": "Compromise Accounts"}}
+{"text": "T1543 Create or Modify System Process", "id": "T1543", "metadata": {"entity_type": "TECHNIQUE", "title": "Create or Modify System Process"}}
+{"text": "T1074 Data Staged", "id": "T1074", "metadata": {"entity_type": "TECHNIQUE", "title": "Data Staged"}}
+{"text": "T1571 Non-Standard Port", "id": "T1571", "metadata": {"entity_type": "TECHNIQUE", "title": "Non-Standard Port"}}
+{"text": "T1542 Pre-OS Boot", "id": "T1542", "metadata": {"entity_type": "TECHNIQUE", "title": "Pre-OS Boot"}}
+{"text": "T1564 Hide Artifacts", "id": "T1564", "metadata": {"entity_type": "TECHNIQUE", "title": "Hide Artifacts"}}
+{"text": "T1049 System Network Connections Discovery", "id": "T1049", "metadata": {"entity_type": "TECHNIQUE", "title": "System Network Connections Discovery"}}
+{"text": "T1134 Access Token Manipulation", "id": "T1134", "metadata": {"entity_type": "TECHNIQUE", "title": "Access Token Manipulation"}}
+{"text": "T1552 Unsecured Credentials", "id": "T1552", "metadata": {"entity_type": "TECHNIQUE", "title": "Unsecured Credentials"}}
+{"text": "T1587 Develop Capabilities", "id": "T1587", "metadata": {"entity_type": "TECHNIQUE", "title": "Develop Capabilities"}}
+{"text": "T1629 Impair Defenses", "id": "T1629", "metadata": {"entity_type": "TECHNIQUE", "title": "Impair Defenses"}}
+{"text": "T1087 Account Discovery", "id": "T1087", "metadata": {"entity_type": "TECHNIQUE", "title": "Account Discovery"}}
+{"text": "T1010 Application Window Discovery", "id": "T1010", "metadata": {"entity_type": "TECHNIQUE", "title": "Application Window Discovery"}}
+{"text": "T1012 Query Registry", "id": "T1012", "metadata": {"entity_type": "TECHNIQUE", "title": "Query Registry"}}
+{"text": "T1018 Remote System Discovery", "id": "T1018", "metadata": {"entity_type": "TECHNIQUE", "title": "Remote System Discovery"}}
+{"text": "T1568 Dynamic Resolution", "id": "T1568", "metadata": {"entity_type": "TECHNIQUE", "title": "Dynamic Resolution"}}
+{"text": "T1505 Server Software Component", "id": "T1505", "metadata": {"entity_type": "TECHNIQUE", "title": "Server Software Component"}}
+{"text": "T1098 Account Manipulation", "id": "T1098", "metadata": {"entity_type": "TECHNIQUE", "title": "Account Manipulation"}}
+{"text": "T1123 Audio Capture", "id": "T1123", "metadata": {"entity_type": "TECHNIQUE", "title": "Audio Capture"}}
+{"text": "T1210 Exploitation of Remote Services", "id": "T1210", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploitation of Remote Services"}}
+{"text": "T1047 Windows Management Instrumentation", "id": "T1047", "metadata": {"entity_type": "TECHNIQUE", "title": "Windows Management Instrumentation"}}
+{"text": "T1135 Network Share Discovery", "id": "T1135", "metadata": {"entity_type": "TECHNIQUE", "title": "Network Share Discovery"}}
+{"text": "T1120 Peripheral Device Discovery", "id": "T1120", "metadata": {"entity_type": "TECHNIQUE", "title": "Peripheral Device Discovery"}}
+{"text": "T1219 Remote Access Software", "id": "T1219", "metadata": {"entity_type": "TECHNIQUE", "title": "Remote Access Software"}}
+{"text": "T1437 Application Layer Protocol", "id": "T1437", "metadata": {"entity_type": "TECHNIQUE", "title": "Application Layer Protocol"}}
+{"text": "T1104 Multi-Stage Channels", "id": "T1104", "metadata": {"entity_type": "TECHNIQUE", "title": "Multi-Stage Channels"}}
+{"text": "T1185 Browser Session Hijacking", "id": "T1185", "metadata": {"entity_type": "TECHNIQUE", "title": "Browser Session Hijacking"}}
+{"text": "T1592 Gather Victim Host Information", "id": "T1592", "metadata": {"entity_type": "TECHNIQUE", "title": "Gather Victim Host Information"}}
+{"text": "T1136 Create Account", "id": "T1136", "metadata": {"entity_type": "TECHNIQUE", "title": "Create Account"}}
+{"text": "T1001 Data Obfuscation", "id": "T1001", "metadata": {"entity_type": "TECHNIQUE", "title": "Data Obfuscation"}}
+{"text": "T1550 Use Alternate Authentication Material", "id": "T1550", "metadata": {"entity_type": "TECHNIQUE", "title": "Use Alternate Authentication Material"}}
+{"text": "T1199 Trusted Relationship", "id": "T1199", "metadata": {"entity_type": "TECHNIQUE", "title": "Trusted Relationship"}}
+{"text": "T1594 Search Victim-Owned Websites", "id": "T1594", "metadata": {"entity_type": "TECHNIQUE", "title": "Search Victim-Owned Websites"}}
+{"text": "T1106 Native API", "id": "T1106", "metadata": {"entity_type": "TECHNIQUE", "title": "Native API"}}
+{"text": "T1584 Compromise Infrastructure", "id": "T1584", "metadata": {"entity_type": "TECHNIQUE", "title": "Compromise Infrastructure"}}
+{"text": "T1008 Fallback Channels", "id": "T1008", "metadata": {"entity_type": "TECHNIQUE", "title": "Fallback Channels"}}
+{"text": "T1129 Shared Modules", "id": "T1129", "metadata": {"entity_type": "TECHNIQUE", "title": "Shared Modules"}}
+{"text": "T1213 Data from Information Repositories", "id": "T1213", "metadata": {"entity_type": "TECHNIQUE", "title": "Data from Information Repositories"}}
+{"text": "T1598 Phishing for Information", "id": "T1598", "metadata": {"entity_type": "TECHNIQUE", "title": "Phishing for Information"}}
+{"text": "T1580 Cloud Infrastructure Discovery", "id": "T1580", "metadata": {"entity_type": "TECHNIQUE", "title": "Cloud Infrastructure Discovery"}}
+{"text": "T1072 Software Deployment Tools", "id": "T1072", "metadata": {"entity_type": "TECHNIQUE", "title": "Software Deployment Tools"}}
+{"text": "T1530 Data from Cloud Storage Object", "id": "T1530", "metadata": {"entity_type": "TECHNIQUE", "title": "Data from Cloud Storage Object"}}
+{"text": "T1111 Two-Factor Authentication Interception", "id": "T1111", "metadata": {"entity_type": "TECHNIQUE", "title": "Two-Factor Authentication Interception"}}
+{"text": "T1221 Template Injection", "id": "T1221", "metadata": {"entity_type": "TECHNIQUE", "title": "Template Injection"}}
+{"text": "T1569 System Services", "id": "T1569", "metadata": {"entity_type": "TECHNIQUE", "title": "System Services"}}
+{"text": "T1509 Non-Standard Port", "id": "T1509", "metadata": {"entity_type": "TECHNIQUE", "title": "Non-Standard Port"}}
+{"text": "T1537 Transfer Data to Cloud Account", "id": "T1537", "metadata": {"entity_type": "TECHNIQUE", "title": "Transfer Data to Cloud Account"}}
+{"text": "T1212 Exploitation for Credential Access", "id": "T1212", "metadata": {"entity_type": "TECHNIQUE", "title": "Exploitation for Credential Access"}}

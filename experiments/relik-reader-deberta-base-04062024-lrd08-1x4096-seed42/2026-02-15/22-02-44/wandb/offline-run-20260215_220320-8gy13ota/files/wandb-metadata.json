@@ -1,0 +1,75 @@
+{
+    "os": "Linux-6.12.38+kali-amd64-x86_64-with-glibc2.42",
+    "python": "3.10.10",
+    "heartbeatAt": "2026-02-16T03:03:20.709810",
+    "startedAt": "2026-02-16T03:03:20.639798",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "++data.train_dataset_path=data/candidates/relik/train.window.candidates.jsonl",
+        "++data.val_dataset_path=data/candidates/relik/val.window.candidates.jsonl",
+        "++data.test_dataset_path=data/candidates/relik/test.window.candidates.jsonl",
+        "++data.train_dataset.section_size=null",
+        "++training.trainer.devices=1"
+    ],
+    "state": "running",
+    "program": "-m relik.cli.cli",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/Ben617/ST.git",
+        "commit": "b126bf43ee5b1546a419c877faafa11551370c9b"
+    },
+    "email": null,
+    "root": "/home/kali/Documents/ST",
+    "host": "kali",
+    "username": "kali",
+    "executable": "/home/kali/Documents/ST/.venv/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 6,
+    "cpu_freq": {
+        "current": 3593.248,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3593.248,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 74.14813613891602,
+            "used": 54.74094009399414
+        }
+    },
+    "memory": {
+        "total": 23.355247497558594
+    }
+}
