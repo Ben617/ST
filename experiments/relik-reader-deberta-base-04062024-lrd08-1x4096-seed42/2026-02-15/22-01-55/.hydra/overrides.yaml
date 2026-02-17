@@ -1,4 +1,0 @@
-- ++data.train_dataset_path=data/candidates/relik/train.window.candidates.jsonl
-- ++data.val_dataset_path=data/candidates/relik/val.window.candidates.jsonl
-- ++data.test_dataset_path=data/candidates/relik/test.window.candidates.jsonl
-- ++data.train_dataset.section_size=null
